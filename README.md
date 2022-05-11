@@ -17,7 +17,7 @@ step 4:
 run json-server --watch db.json
 
 step 5:
-open Angular_challange folder
+open challange folder
 
 step 6:
 npm install -> ng serve
