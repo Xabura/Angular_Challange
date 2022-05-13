@@ -1,8 +1,23 @@
-Challange folder - angular პროექტი
-NOTE: node_modules-ის ფოლდერი არარის
+# Angular_Challange
 
-Markup folder - მარკაპის ტასკი (შესრულებულია მხოლოდ HTML, CSS და JS-ის გამოყენებით)
+Angular app
 
-db.json file - Angular პროექტში გამოყენებული data
+How to open:
 
-პატივისცემით 🙏
+step 1:
+download https://github.com/typicode/json-server
+
+step 2:
+add db.json file to main folder
+
+step 3:
+run npm install -g json-server
+
+step 4:
+run json-server --watch db.json
+
+step 5:
+open challange folder
+
+step 6:
+npm install -> ng serve
