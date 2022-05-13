@@ -1,0 +1,88 @@
+{
+  "cars": [
+    {
+      "id": "car1",
+      "model": "BMW",
+      "img": "https://cdn.motor1.com/images/mgl/kP1zP/s1/2020-bmw-x6.jpg",
+      "description": "some description",
+      "char": {
+        "electric-glass": true,
+        "hatch": true,
+        "bluetooth": false,
+        "alarm": true,
+        "parking": false,
+        "navigation": false,
+        "computer": true,
+        "wheel": false
+      }
+    },
+    {
+      "id": "car2",
+      "model": "Mercedes",
+      "img": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/2013-cls63-amg-3-source-1557856819.jpg",
+      "description": "some description",
+      "char": {
+        "ABS": false,
+        "electric-glass": true,
+        "hatch": true,
+        "bluetooth": false,
+        "alarm": true,
+        "parking": false,
+        "navigation": false,
+        "computer": true,
+        "wheel": false
+      }
+    },
+    {
+      "id": "car3",
+      "model": "Toyota",
+      "img": "https://www.tuningblog.eu/wp-content/uploads/2020/07/Fast-Furious-Paul-Walker-Toyota-Supra-MK4-Replika-Header.jpg",
+      "description": "some description",
+      "char": {
+        "ABS": false,
+        "electric-glass": true,
+        "hatch": true,
+        "bluetooth": false,
+        "alarm": true,
+        "parking": false,
+        "navigation": false,
+        "computer": true,
+        "wheel": false
+      }
+    },
+    {
+      "id": "car4",
+      "model": "Audi",
+      "img": "https://images.netdirector.co.uk/gforces-auto/image/upload/q_auto,c_crop,f_auto,fl_lossy,x_752,y_883,w_1584,h_1186/w_1200,h_900,c_fill/auto-client/a52fdf2942306af98e5fcd4d1b98a7b1/a1911783_medium.jpg",
+      "description": "some description",
+      "char": {
+        "ABS": false,
+        "electric-glass": true,
+        "hatch": true,
+        "bluetooth": false,
+        "alarm": true,
+        "parking": false,
+        "navigation": false,
+        "computer": true,
+        "wheel": false
+      }
+    },
+    {
+      "id": "car5",
+      "model": "Toyota",
+      "img": "https://cdn.britannica.com/93/97093-050-23ACD82B/Prius-Toyota-1997.jpg",
+      "description": "best one in the stock!",
+      "char": {
+        "abs": true,
+        "electric-glass": true,
+        "hatch": true,
+        "bluetooth": true,
+        "alarm": true,
+        "parking": true,
+        "navigation": true,
+        "computer": true,
+        "wheel": true
+      }
+    }
+  ]
+}
