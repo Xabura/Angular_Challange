@@ -1,0 +1,93 @@
+input.ng-touched.ng-invalid,
+select.ng-touched.ng-invalid {
+  border: solid 1px red;
+  box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 5rem 15%;
+  gap: 3rem;
+}
+
+select {
+  font-size: large;
+  padding: 0.5rem 1rem;
+  border-radius: 7px;
+  box-shadow: 0 0 5px gray;
+}
+
+textarea {
+  padding: .7rem;
+  width: 50%;
+  margin: auto;
+  font-size: large;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: 0 0 5px gray;
+  border-radius: 10px;
+}
+
+form > input {
+  padding: 0.5rem 1rem;
+  font-size: large;
+  border-radius: 7px;
+  border: none;
+  box-shadow: 0 0 5px gray;
+}
+
+.checkboxes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 1rem;
+  font-size: large;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 0 5px gray;
+}
+
+.checkboxes input {
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.5rem;
+}
+
+.buttonsDiv {
+  display: flex;
+  justify-content: space-around;
+}
+
+.back {
+  color: rgb(2, 102, 202);
+  font-size: large;
+  background-color: white;
+  padding: 0.5rem 1rem;
+  box-shadow: 0 0 5px gray;
+  border-radius: 5px;
+  transition: 200ms;
+}
+
+.back:hover {
+  transform: scale(1.1);
+  background-color: rgba(0, 0, 0, 0.1);
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.save {
+  font-size: large;
+  padding: 0.5rem 1rem;
+  box-shadow: 0 0 5px green;
+  border-radius: 5px;
+  background-color: rgba(0, 200, 0, 0.8);
+  transition: 200ms;
+}
+
+.save:hover {
+  transform: scale(1.1);
+  background-color: rgb(0, 200, 0);
+}
+
+.save:disabled {
+  background-color: rgba(0, 255, 0, 0.5);
+}

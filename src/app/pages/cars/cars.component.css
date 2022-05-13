@@ -1,0 +1,114 @@
+section {
+  padding: 5rem 10%;
+}
+
+.add {
+  font-size: large;
+  background-color: dodgerblue;
+  padding: 1rem 2rem;
+  border-radius: 7px;
+  box-shadow: 0 0 5px black;
+  display: block;
+  margin: auto;
+  margin-bottom: 5rem;
+}
+
+ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr ;
+  gap: 2rem;
+}
+
+@media (max-width: 1200px){
+    ul{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width: 800px){
+    ul{
+        grid-template-columns: 1fr;
+    }
+}
+
+li {
+  border: solid 1px black;
+  border-radius: 10px;
+  box-shadow: 0 0 5px gray;
+  background-color: white;
+  position: relative;
+  transition: 200ms;
+  height: 20rem;
+}
+
+li:hover {
+  transform: scale(1.1);
+}
+
+li .details {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100%;
+  color: white;
+  padding: 1rem;
+  border-radius: 10px;
+
+  visibility: hidden;
+}
+
+.charDiv {
+  display: flex;
+  justify-content: space-between;
+}
+.details p {
+  margin-bottom: 0.1rem;
+}
+
+li:hover .details {
+  visibility: visible;
+}
+
+.imgDiv {
+  height: 10rem;
+}
+img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+h3 {
+  text-align: center;
+  margin: 1rem;
+  font-size: x-large;
+  letter-spacing: 2px;
+}
+
+.description {
+  font-size: large;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.buttonsDiv{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+
+.edit,
+.delete {
+  padding: .3rem;
+  width: 2rem;
+  /* margin-top: 1.5rem; */
+  border-radius: 5px;
+}
+
+.edit{
+    background-color: dodgerblue;
+}
+
+.delete{
+    background-color: firebrick;
+}

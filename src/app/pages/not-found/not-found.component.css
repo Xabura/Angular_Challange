@@ -1,0 +1,35 @@
+section{
+    margin: 5rem 10%;
+    background-color: white;
+    padding: 2rem;
+    padding-bottom: 4rem;
+    border-radius: 20px;
+    box-shadow: 0 0 10px gray;
+    text-align: center;
+}
+
+div{
+    width: 25%;
+    margin: auto;
+    margin-bottom: 2rem;
+}
+
+h1{
+    font-size: xx-large;
+    color: rgb(17, 111, 206);
+    margin-bottom: 3rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+a{
+    background-color: dodgerblue;
+    color: white;
+    padding: 1rem 2rem;
+    font-size: large;
+    border-radius: 10px;
+    transition: 200ms;
+}
+
+a:hover{
+    background-color: rgb(17, 111, 206);
+}

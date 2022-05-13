@@ -1,0 +1,37 @@
+.lds-dual-ring {
+  position: relative;
+  top: calc(50% - 80px);
+  left: calc(50% - 80px);
+  display: inline-block;
+  width: 160px;
+  height: 160px;
+}
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 128px;
+  height: 128px;
+  margin: 16px;
+  border-radius: 50%;
+  border: 8px solid dodgerblue;
+  border-color: dodgerblue transparent dodgerblue transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+}

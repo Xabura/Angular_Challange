@@ -1,0 +1,29 @@
+<section>
+  <app-loading-spinner *ngIf="isLoading"></app-loading-spinner>
+
+  <button (click)="onAdd()" class="add">Add New Car</button>
+
+  <ul>
+    <li *ngFor="let car of cars">
+      <div class="imgDiv">
+        <img [src]="car.img" alt="Car Image" />
+      </div>
+      <h3>{{ car.model }}</h3>
+      <p class="description">{{ car.description }}</p>
+      <div class="details">
+        <div class="charDiv" *ngFor="let char of car.char | keyvalue">
+          <p>{{ char.key }}</p>
+          <p>{{ char.value ? "Yes" : "No" }}</p>
+        </div>
+        <div class="buttonsDiv">
+          <button class="edit" [routerLink]="'/cars/edit/' + car.id">
+            <img src="assets/img/edit.png" alt="Edit" />
+          </button>
+          <button class="delete" (click)="onDelete(car.id)">
+            <img src="assets/img/delete.png" alt="Delete" />
+          </button>
+        </div>
+      </div>
+    </li>
+  </ul>
+</section>

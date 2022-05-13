@@ -1,0 +1,66 @@
+<form #form="ngForm" (submit)="onSubmit(form.value)">
+  <select
+    name="model"
+    id="char"
+    ngModel
+    aria-placeholder="Select Model"
+    required=""
+  >
+    <option value="" disabled selected>Select Model</option>
+    <option value="Audi">Audi</option>
+    <option value="BMW">BMW</option>
+    <option value="Mercedes">Mercedes</option>
+    <option value="Toyota">Toyota</option>
+    <option value="Mitsubishi">Mitsubishi</option>
+  </select>
+  <textarea name="description" id="description" rows="5" ngModel placeholder="Write some description about the car"></textarea>
+
+  <input
+    type="text"
+    placeholder="Car Image..."
+    id="img"
+    name="img"
+    ngModel
+    required
+    pattern="https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)"
+    />
+
+  <div class="checkboxes">
+    <label for="abs">
+      <input type="checkbox" name="abs" id="abs" ngModel /> ABS
+    </label>
+    <label for="window">
+      <input type="checkbox" name="window" id="window" ngModel /> Electric
+      window hoist
+    </label>
+    <label for="hatch">
+      <input type="checkbox" name="hatch" id="hatch" ngModel /> Hatch
+    </label>
+    <label for="bluetooth">
+      <input type="checkbox" name="bluetooth" id="bluetooth" ngModel />
+      Bluetooth
+    </label>
+    <label for="alarm">
+      <input type="checkbox" name="alarm" id="alarm" ngModel /> Alarm
+    </label>
+    <label for="parking">
+      <input type="checkbox" name="parking" id="parking" ngModel /> Parking
+      control
+    </label>
+    <label for="navigation">
+      <input type="checkbox" name="navigation" id="navigation" ngModel />
+      Navigation
+    </label>
+    <label for="computer">
+      <input type="checkbox" name="computer" id="computer" ngModel /> On-board
+      computer
+    </label>
+    <label for="wheel">
+      <input type="checkbox" name="wheel" id="wheel" ngModel /> Multi wheel
+    </label>
+  </div>
+  <div class="buttonsDiv">
+    <button type="button" class="back" [routerLink]="['/cars']">&#8592; Go Back</button>
+    <button type="submit" class="save" [disabled]="!form.valid">Save</button>
+  </div>
+</form>
